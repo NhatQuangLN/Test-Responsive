@@ -68,10 +68,14 @@
     right: 0;
     /* margin-top: 0.5rem; */
     /* max-height: 100vh; */
-    height: auto;
+    max-height: 250px;
     overflow-y: scroll;
     z-index: 999;
-    background-color: #e7f218;
+    /* background-color: #e7f218; */
+  }
+  .username--overflow {
+    overflow-y: scroll;
+    /* max-height: 90vh; */
   }
 }
 .dropdown-menu-end::before {
@@ -99,7 +103,7 @@
   display: none !important;
 }
 .username--overflow {
-  overflow: scroll;
+  overflow-y: unset;
   max-height: 90vh;
 }
 .dropdown-username-text {
