@@ -1,0 +1,98 @@
+.landing-title {
+  color: var(--text-bold);
+  font-weight: 600;
+  font-size: calc(1.425rem + 2.1vw);
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .landing-title {
+    font-size: 3rem;
+  }
+}
+.landing-title--active{
+    color: var(--primary-color);
+
+}
+.landing-title--active:hover{
+    color: var(--primary-color-hover);
+    cursor: pointer;
+}
+.landing-title-sub-text{
+    font-size: 1.125rem;
+    color: var(--text-color);
+}
+.how-it-worrk-all-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+
+}
+@media (min-width: 991.98px) {
+    .how-it-worrk-all-item{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+  }
+.how-it-work-img{
+    position: relative;
+
+}
+.how-it-work-arrow{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.how-it-work-img img{
+    box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
+    0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  border: 8px solid #fff;
+}
+.how-it-work-step{
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    font-size: 0.8125rem;
+    /* padding: 10px; */
+    top: 0;
+    right: 0;
+}
+.how-it-work-img:hover .how-it-work-step{
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 5px solid var(--primary-color);
+    animation: fadeOut 0.3s linear;
+    /* opacity: 1; transform: translate3d(0px, 0px, 0px); */
+}
+.how-it-work-img:hover .how-it-work-guideline{
+    color: var(--primary-color);
+    -webkit-animation: slide-up 0.25s ease-in-out;
+  animation: slide-up 0.25s ease-in-out;
+}
+@keyframes fadeOut {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    }
+}
+.how-it-work-guideline{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-header);
+}
