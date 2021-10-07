@@ -1,3 +1,4 @@
+// impressive number js
 function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ");
 }
@@ -20,14 +21,6 @@ let end = document.getElementsByClassName("impressive-item-number-count");
 for (let i = 0; i < end.length; i++) {
   end[i].innerHTML = end[i].innerHTML.replace(/ /g, "");
 }
-// jQuery('.impressive-list').one('inview', function (event, visible) {
-//     if (visible == true) {
-//        animateValue(obj[0], 0, end[0].innerHTML, 4000);
-//       animateValue(obj[1], 0, end[1].innerHTML, 5000);
-//       animateValue(obj[2], 0, end[2].innerHTML, 4000);
-//       animateValue(obj[3], 0, end[3].innerHTML, 5000);
-//     }
-// });
 let flag = 1;
 $(window).scroll(function () {
   var hT = $("#impressive-list").offset().top,
@@ -44,42 +37,105 @@ $(window).scroll(function () {
     Math.round(wS) <= Math.round(hT2) &&
     flag == 1
   ) {
-    // const obj = document.getElementsByClassName("impressive-item-number-count");
-    // let end = document.getElementsByClassName("impressive-item-number-count");
-    // for (let i = 0; i < end.length; i++) {
-    //   end[i].innerHTML = end[i].innerHTML.replace(/ /g, "");
-    // }
     animateValue(obj[0], 0, end[0].innerHTML, 4000);
     animateValue(obj[1], 0, end[1].innerHTML, 5000);
     animateValue(obj[2], 0, end[2].innerHTML, 4000);
     animateValue(obj[3], 0, end[3].innerHTML, 5000);
     flag = 0;
-    // $('.count').each(function() {
-    //     $(this).prop('Counter', 0).animate({
-    //         Counter: $(this).text()
-    //     }, {
-    //         duration: 900,
-    //         easing: 'swing',
-    //         step: function(now) {
-    //             $(this).text(Math.ceil(now));
-    //         }
-    //     });
-    // }); {
-    //     $('.count').removeClass('count').addClass('counted');
-    // };
   }
 });
-// $(document).on("scroll", function () {
 
-//   if ($(this).scrollTop() >= $("#impressive-list").position().top) {
-
-//     animateValue(obj[0], 0, end[0].innerHTML, 4000);
-//     animateValue(obj[1], 0, end[1].innerHTML, 5000);
-//     animateValue(obj[2], 0, end[2].innerHTML, 4000);
-//     animateValue(obj[3], 0, end[3].innerHTML, 5000);
-//   console.log(1);
-
-//   }
-// });
-
-//   console.log(parseInt(end));
+// scroll reveal
+const sr = ScrollReveal();
+// landing img
+sr.reveal(".reveal-right-landing ", {
+  origin: "right",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 100,
+  distance: "100px",
+});
+sr.reveal(".reveal-left-landing", {
+  origin: "left",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 500,
+  distance: "90px",
+});
+sr.reveal(".reveal-left-landing-text", {
+  origin: "left",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 1000,
+  distance: "40px",
+});
+sr.reveal(".reveal-up-landing-button", {
+  origin: "bottom",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 1500,
+  distance: "10px",
+});
+// reveal section title
+sr.reveal(".reveal-section-sub-title", {
+  origin: "left",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 500,
+  distance: "30px",
+});
+sr.reveal(".reveal-section-title", {
+  origin: "right",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 700,
+  distance: "30px",
+});
+// how we work
+sr.reveal(".reveal-hiw-1", {
+  origin: "left",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 1000,
+  distance: "30px",
+});
+sr.reveal(".reveal-hiw-2", {
+  origin: "left",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 1500,
+  distance: "30px",
+});
+sr.reveal(".reveal-hiw-3", {
+  origin: "left",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 2000,
+  distance: "30px",
+});
+sr.reveal(".reveal-hiw-4", {
+  origin: "left",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  delay: 2500,
+  distance: "30px",
+});
+// reveal category
+sr.reveal(".reveal-up-category", {
+  origin: "left",
+  duration: 1000,
+  opacity: 0,
+  easing: "ease-out",
+  // delay: 500,
+  distance: "30px",
+});

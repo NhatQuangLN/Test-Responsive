@@ -10,10 +10,6 @@
   <!-- bootstrap 5 -->
   <link rel="stylesheet" href="framework/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
-
-
-
-
   <!-- base.css -->
   <link rel="stylesheet" href="resource/css/base.css">
   <!-- noto sans font -->
@@ -26,7 +22,7 @@
   <link rel="stylesheet" href="resource/css/home.css">
 
   <!-- tiny slider -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+  <link rel="stylesheet" href="node_modules/tiny-slider/dist/tiny-slider.css">
   <title>Document</title>
 </head>
 
@@ -321,21 +317,23 @@
 
   <!-- end header -->
   <!-- section landing image -->
-  <section class="landing container py-5 mt-5 mb-lg-3" style="background-color: #fff;">
+  <section class="landing container py-5 mt-5" style="background-color: #fff;">
     <div class="row align-items-center mt-md-2 d-flex">
-      <div class="col-lg-7 order-lg-2 mb-lg-0 mb-4 pb-2 pb-lg-0">
+      <div class="reveal-right-landing col-lg-7 order-lg-2 mb-lg-0 mb-4 pb-2 pb-lg-0">
         <img src="resource/img/landingimg-4.png" alt="" class="d-block mx-auto img-fluid" width="80%">
         <!-- <img src="resource/img/3075752.jpg" alt="" class="d-block mx-auto img-fluid" width="80%"> -->
 
       </div>
       <div class="col-lg-5 order-lg-1 pe-lg-0">
-        <h1 class="text-center text-lg-start mb-4 landing-title">Start <span class="landing-title--active"
+        <h1 class="reveal-left-landing text-center text-lg-start mb-4 landing-title">Start <span
+            class="landing-title--active"
             onclick="window.location.href = 'https://fontawesome.com/v5.15/icons/bell?style=duotone'">Exchange</span>
           <br class="d-lg-block d-none">around the World
         </h1>
-        <p class="text-lg-start text-center mb-4 mb-lg-8 fs-lg landing-title-sub-text">Connect friends from all over the
+        <p class="reveal-left-landing-text text-lg-start text-center mb-4 mb-lg-8 fs-lg landing-title-sub-text">Connect
+          friends from all over the
           world, exchange your favorite items with just a few simple steps.</p>
-        <div class="text-lg-start text-center">
+        <div class="text-lg-start text-center reveal-up-landing-button">
           <button class="btn btn-primary btn-lg d-lg-block d-none ">Start exploring now!</button>
           <button class="btn btn-primary d-lg-none">Start exploring now!</button>
         </div>
@@ -343,35 +341,77 @@
     </div>
   </section>
   <!-- end section landing image -->
+  <!-- start a category -->
+  <section class="container pb-5 mt-5 mb-lg-3 d-flex reveal-up-landing-button" style="flex-wrap: wrap">
+    <a class=" category-bg-blue d-inline-block flex-row align-items-center flex-shrink-0 border-0 rounded-pill py-2 ps-2 pe-4 mb-2 mb-sm-3 me-sm-3 me-xxl-4"
+      href="#" style=" box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
+      0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);">
+      <div class="d-inline-block"><span class="category-icon"><i class="far fa-tshirt"></i></span></div>
+      <h3 class="category-name d-inline-block ps-1 pe-2 mb-0">Woman's fashion</h3>
+    </a>
+    <a class=" category-bg-yellow d-inline-block flex-row align-items-center flex-shrink-0 border-0 rounded-pill py-2 ps-2 pe-4 mb-2 mb-sm-3 me-sm-3 me-xxl-4"
+      href="#" style=" box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
+      0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);">
+      <div class="d-inline-block"><span class="category-icon"><i class="far fa-tshirt"></i></span></div>
+      <h3 class="category-name d-inline-block ps-1 pe-2 mb-0">Woman's fashion</h3>
+    </a>
+    <a class=" category-bg-primary d-inline-block flex-row align-items-center flex-shrink-0 border-0 rounded-pill py-2 ps-2 pe-4 mb-2 mb-sm-3 me-sm-3 me-xxl-4"
+      href="#" style=" box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
+    0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);">
+      <div class="d-inline-block"><span class="category-icon"><i class="far fa-tshirt"></i></span></div>
+      <h3 class="category-name d-inline-block ps-1 pe-2 mb-0">Woman</h3>
+    </a>
+    <a class=" category-bg-green d-inline-block flex-row align-items-center flex-shrink-0 border-0 rounded-pill py-2 ps-2 pe-4 mb-2 mb-sm-3 me-sm-3 me-xxl-4"
+      href="#" style=" box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
+      0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);">
+      <div class="d-inline-block"><span class="category-icon"><i class="far fa-tshirt"></i></span></div>
+      <h3 class="category-name d-inline-block ps-1 pe-2 mb-0">Woman's fashion</h3>
+    </a>
+    <a class=" category-bg-yellow d-inline-block flex-row align-items-center flex-shrink-0 border-0 rounded-pill py-2 ps-2 pe-4 mb-2 mb-sm-3 me-sm-3 me-xxl-4"
+      href="#" style=" box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
+      0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);">
+      <div class="d-inline-block"><span class="category-icon"><i class="far fa-tshirt"></i></span></div>
+      <h3 class="category-name d-inline-block ps-1 pe-2 mb-0">Woman's fashion</h3>
+    </a>
+    <a class=" category-bg-blue d-inline-block flex-row align-items-center flex-shrink-0 border-0 rounded-pill py-2 ps-2 pe-4 mb-2 mb-sm-3 me-sm-3 me-xxl-4"
+      href="#" style=" box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
+    0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);">
+      <div class="d-inline-block"><span class="category-icon"><i class="far fa-ellipsis-h"></i></span></div>
+      <h3 class="category-name d-inline-block ps-1 pe-2 mb-0">More</h3>
+    </a>
+  </section>
   <!-- start how it work -->
   <section class="how-it-work container pb-5 mt-5 mb-lg-3">
     <div class="row text-center mb-5 pb-lg-3">
-      <small class="text-sub-title-section mb-2">Exchange now!</small>
-      <h2 class="text-title-section">How we works</h2>
+      <small class="reveal-section-sub-title text-sub-title-section mb-2">Exchange now!</small>
+      <h2 class="reveal-section-title text-title-section">How we works</h2>
     </div>
     <div class="how-it-work-all-item">
-      <div style="width: 190px;" class="d-inline-block how-it-work-img">
+      <div style="width: 190px;" class="reveal-hiw-1 d-inline-block how-it-work-img">
         <img src="resource/img/post your product.png" alt="" width="190" class=" mb-4">
         <div class="how-it-work-step text-center my-auto mx-auto"> <span>01<br>STEP</span></div>
         <div class="text-center how-it-work-guideline">Post Your Items</div>
       </div>
-      <span class="how-it-work-arrow d-none d-md-flex"><img src="resource/img/arrow-up-2.png" alt="" width="85"></span>
-      <div style="width: 190px;" class="d-inline-block how-it-work-img">
+      <span class="reveal-hiw-1 how-it-work-arrow d-none d-md-flex"><img src="resource/img/arrow-up-2.png" alt=""
+          width="85"></span>
+      <div style="width: 190px;" class="reveal-hiw-2 d-inline-block how-it-work-img">
         <img src="resource/img/requestanexchange.png" alt="" width="190" class=" mb-4">
         <div class="how-it-work-step text-center my-auto mx-auto"> <span>02<br>STEP</span></div>
         <div class="text-center how-it-work-guideline">Request an Exchange</div>
       </div>
-      <div class="how-it-work-arrow d-none d-xl-flex"><img src="resource/img/arrow-down.png" alt="" width="85"></div>
+      <div class="reveal-hiw-2 how-it-work-arrow d-none d-xl-flex"><img src="resource/img/arrow-down.png" alt=""
+          width="85"></div>
       <div class="break"></div>
-      <div style="width: 190px;" class="d-inline-block how-it-work-img">
+      <div style="width: 190px;" class="reveal-hiw-3 d-inline-block how-it-work-img">
         <img src="resource/img/waitforaceeptance.png" alt="" width="190" class=" mb-4">
         <div class="how-it-work-step text-center my-auto mx-auto"> <span>03<br>STEP</span></div>
         <div class="text-center how-it-work-guideline">Wait for Acceptance</div>
       </div>
-      <div class="how-it-work-arrow d-none d-lg-flex"><img src="resource/img/arrow-up-2.png" alt="" width="85"></div>
-      <div class="how-it-work-arrow d-none d-md-flex d-lg-none"><img src="resource/img/arrow-down.png" alt=""
+      <div class="reveal-hiw-3 how-it-work-arrow d-none d-lg-flex"><img src="resource/img/arrow-up-2.png" alt=""
           width="85"></div>
-      <div style="width: 190px;" class="d-inline-block how-it-work-img">
+      <div class="reveal-hiw-3 how-it-work-arrow d-none d-md-flex d-lg-none"><img src="resource/img/arrow-down.png"
+          alt="" width="85"></div>
+      <div style="width: 190px;" class="reveal-hiw-4 d-inline-block how-it-work-img">
         <img src="resource/img/exchangeandenjoy-2.png" style="-webkit-transform: scaleX(-1);transform: scaleX(-1);"
           alt="" width="190" class=" mb-4">
         <div class="how-it-work-step text-center my-auto mx-auto"> <span>04<br>STEP</span></div>
@@ -523,8 +563,8 @@
   <!-- những con số ấn tuọngq impressive-number-->
   <section class="impressive-number container pb-5 mt-5 mb-lg-3">
     <div class="row text-center mb-5 pb-lg-3">
-      <small class="text-sub-title-section mb-2">Exchange now!</small>
-      <h2 class="text-title-section">Impressive numbers</h2>
+      <small class="reveal-section-sub-title text-sub-title-section mb-2">Exchange now!</small>
+      <h2 class="reveal-section-title text-title-section">Impressive numbers</h2>
     </div>
 
     <div>
@@ -754,8 +794,8 @@
   </section>
   <!-- end top like post -->
   <!-- start a category -->
-  <section class="container pb-5 mt-5 mb-lg-3 d-flex " style="flex-wrap: wrap">
-    <a class=" category-bg-blue d-inline-block flex-row align-items-center flex-shrink-0 border-0 rounded-pill py-2 ps-2 pe-4 mb-2 mb-sm-3 me-sm-3 me-xxl-4"
+  <section class="container pb-5 mt-5 mb-lg-3 d-flex reveal-up-category"  style="flex-wrap: wrap">
+    <a class="category-bg-blue d-inline-block flex-row align-items-center flex-shrink-0 border-0 rounded-pill py-2 ps-2 pe-4 mb-2 mb-sm-3 me-sm-3 me-xxl-4"
       href="#" style=" box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
       0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);">
       <div class="d-inline-block"><span class="category-icon"><i class="far fa-tshirt"></i></span></div>
@@ -1098,7 +1138,8 @@
           <h3 class="h4 text-footer-header" style="font-size: 1.5rem;">Subscribe to our website</h3>
           <p class="fs-sm mb-4 opacity-60 nav-link-light">Don’t miss any latest items!</p>
           <form class="form-group-light rounded-pill" style="max-width: 500px;">
-            <div class="input-group "><span class="input-group-text text-muted" style="border-top-left-radius: 50rem; border-bottom-left-radius: 50rem;"><i
+            <div class="input-group "><span class="input-group-text text-muted"
+                style="border-top-left-radius: 50rem; border-bottom-left-radius: 50rem;"><i
                   class="far fa-envelope"></i></span>
               <input class="form-control-light" type="email" placeholder="Your email">
             </div>
@@ -1110,7 +1151,8 @@
     <div class="py-4 border-top border-light">
       <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between py-2">
         <!-- Copyright-->
-        <p class="order-lg-1 order-2 fs-sm mb-2 mb-lg-0 text-center"><span class="nav-link-light opacity-60">&copy; All rights
+        <p class="order-lg-1 order-2 fs-sm mb-2 mb-lg-0 text-center"><span class="nav-link-light opacity-60">&copy; All
+            rights
             reserved.
             Made by </span><a class="nav-link-light fw-bold" href="#" target="_blank" rel="noopener">DuniExchange
             Website</a></p>
@@ -1146,13 +1188,14 @@
 
 
   <!-- tiny slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-  <script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+  <script type="module">
+    import { tns } from './node_modules/tiny-slider/src/tiny-slider.js';
     var slider = tns({
       container: '.my-slider',
       items: 2,
       // slideBy: 'page',
-      // autoplay: true,
+      autoplay: true,
       center: true,
       loop: true,
       swipeAngle: false,
@@ -1176,7 +1219,7 @@
       container: '.my-slider-2',
       items: 2,
       // slideBy: 'page',
-      // autoplay: true,
+      autoplay: true,
       center: true,
       loop: true,
       swipeAngle: false,
@@ -1197,13 +1240,14 @@
     });
   </script>
   <!-- <section style="height: 500px;"></section> -->
-
+  <!-- scroll reveal -->
+  <script src="node_modules/scrollreveal/dist/scrollreveal.js"></script>
   <!-- bootstrap 5 -->
   <script src="framework/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- home page js -->
-  <!-- <script src="resource/js/home.js"></script> -->
+  <script src="resource/js/home.js"></script>
   <!-- font awsomwe -->
   <script src="resource/font-awesome-pro-master/js/all.min.js"></script>
 </body>
