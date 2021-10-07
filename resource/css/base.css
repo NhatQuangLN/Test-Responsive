@@ -11,6 +11,7 @@
   --text-color: #666276;
   /* (màu của những chữ thêm thông tin phụ đi kèm), icon color */
   --text-sub-color: #9691a4;
+  --text-footer: #FFFFFFA6;
 }
 
 * {
