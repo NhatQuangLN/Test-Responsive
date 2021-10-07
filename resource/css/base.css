@@ -29,10 +29,10 @@ body {
 }
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 a:hover {
-  color: var(--primary-color-hover);
+  color: var(--primary-color);
 }
 ul {
   list-style: none;
@@ -40,11 +40,11 @@ ul {
   /* margin: 0px; */
   margin: 0;
 }
-.form-control:focus{
+.form-control:focus {
   border-color: var(--primary-color-hover) !important;
   box-shadow: 0 0 0 0.2rem rgba(253, 86, 49, 0.5);
 }
-input.form-control{
+input.form-control {
   color: var(--text-color) !important;
 }
 @-webkit-keyframes fade-in {
@@ -83,23 +83,71 @@ input.form-control{
     opacity: 1;
   }
 }
+/* fron chữ cho dòng, được responsive.................................... */
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+h2,
+.h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
+}
+h3,
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3,
+  .h3 {
+    font-size: 1.75rem;
+  }
+}
+h4,
+.h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4,
+  .h4 {
+    font-size: 1.5rem;
+  }
+}
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+h6,
+.h6 {
+  font-size: 1.125rem;
+}
 /*------------------------------------
 - CHANGE COLOR primary BUTTON BOOTSTRAP TO màu cam của mình
 link: https://lingtalfi.com/bootstrap4-color-generator#
 ------------------------------------*/
 :root {
---primary_t1: #fd5631;
---primary_t2: #f82f02;
---primary_t3: #fed6cd;
---primary_t4: #feebe6;
---primary_t5: #b12101;
---primary_t6: #e92c02;
---primary_t7: #fc380d;
---primary_t8: #7f1801;
---primary_t9: #fefbfb;
+  --primary_t1: #fd5631;
+  --primary_t2: #f82f02;
+  --primary_t3: #fed6cd;
+  --primary_t4: #feebe6;
+  --primary_t5: #b12101;
+  --primary_t6: #e92c02;
+  --primary_t7: #fc380d;
+  --primary_t8: #7f1801;
+  --primary_t9: #fefbfb;
 
---primary_shadow: rgba(253, 86, 49, 0.5);
---primary_text_color_dark_bright: #FFF;
+  --primary_shadow: rgba(253, 86, 49, 0.5);
+  --primary_text_color_dark_bright: #fff;
 }
 
 .alert-primary {
@@ -121,7 +169,8 @@ link: https://lingtalfi.com/bootstrap4-color-generator#
   background-color: var(--primary_t1);
 }
 
-.badge-primary[href]:hover, .badge-primary[href]:focus {
+.badge-primary[href]:hover,
+.badge-primary[href]:focus {
   color: var(--primary_text_color_dark_bright);
   background-color: var(--primary_t2);
 }
@@ -130,7 +179,8 @@ link: https://lingtalfi.com/bootstrap4-color-generator#
   background-color: var(--primary_t1) !important;
 }
 
-a.bg-primary:hover, a.bg-primary:focus,
+a.bg-primary:hover,
+a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: var(--primary_t2) !important;
@@ -152,23 +202,29 @@ button.bg-primary:focus {
   border-color: var(--primary_t2);
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus,
+.btn-primary.focus {
   box-shadow: 0 0 0 0.2rem var(--primary_shadow);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled,
+.btn-primary:disabled {
   color: var(--primary_text_color_dark_bright);
   background-color: var(--primary_t1);
   border-color: var(--primary_t1);
 }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
   color: var(--primary_text_color_dark_bright);
   background-color: var(--primary_t2);
   border-color: var(--primary_t6);
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem var(--primary_shadow);
 }
 
@@ -184,22 +240,28 @@ button.bg-primary:focus {
   border-color: var(--primary_t1);
 }
 
-.btn-outline-primary:focus, .btn-outline-primary.focus {
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
   box-shadow: 0 0 0 0.2rem var(--primary_shadow);
 }
 
-.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
   color: var(--primary_t1);
   background-color: transparent;
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
   color: var(--primary_text_color_dark_bright);
   background-color: var(--primary_t1);
   border-color: var(--primary_t1);
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem var(--primary_shadow);
 }
 
@@ -208,7 +270,8 @@ button.bg-primary:focus {
   background-color: var(--primary_t4);
 }
 
-.list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
+.list-group-item-primary.list-group-item-action:hover,
+.list-group-item-primary.list-group-item-action:focus {
   color: var(--primary_t5);
   background-color: var(--primary_t3);
 }
@@ -238,6 +301,7 @@ button.bg-primary:focus {
   color: var(--primary_t1) !important;
 }
 
-a.text-primary:hover, a.text-primary:focus {
+a.text-primary:hover,
+a.text-primary:focus {
   color: var(--primary_t2) !important;
 }
